@@ -211,7 +211,7 @@ class DatabaseManager:
     
         # FIXME: Remove before production deploy! Possible we need to add more to make this function
         if not api_url or 'youtube.com' in api_url:
-            api_url = "http://evillm-development-alb-69976184.us-west-2.elb.amazonaws.com/chat"
+            api_url = "http://evillm-development-alb-1342981158.us-west-2.elb.amazonaws.com/chat"
             logger.warning("Using hardcoded LLM endpoint - this should be fixed!")
         
         # Simulate a request (in reality, this would be a POST to the LLM endpoint)
